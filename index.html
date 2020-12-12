@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SOSAnimal - Hospital Veterinário</title>
+
+    <!-- Stylesheets and fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Top menu bar-->
+    <div class="top-bar">
+            <img class="logo" src="img/logo_black.png">
+        <div class="right">
+            <a href="#" class="menu-item">Sobre nós</a>
+            <a href="#" class="menu-item">Hospital</a>
+            <a href="#" class="menu-item">Adotar/Apadrinhar</a>
+            <a href="#" class="menu-item">Contatos</a>
+            <button type="button" class="btn top-menu-button">Agendar agora</button>
+        </div>
+    </div>
+
+    <!-- Main page introduction message -->
+    <div class="header">
+        <div class="header-content">
+            <div class="HVS-subtitle">CONFIANÇA, DEDICAÇÃO</div>
+            <hr class="menu-hr">
+            <p class="HVS-header">Hospital Veterinário<br> Solidário</p>
+            <button type="button" class="agendar btn btn-danger">Agende uma consulta</button>
+            <button type="button" class="contribuir btn btn-primary">Como contribuir</button>
+        </div>
+    </div>
+
+    <!-- TO DO: Patrocinadores -->
+    <div class="patrocinadores">
+        <h3 class="text-patrocinadores secondary-color">CONHEÇA OS NOSSOS PATROCINADORES</h3>
+        <img class="patrocinador" style="margin-left: 25%;"src="img/patrocinadores/ddb_logo.png">
+        <img class="patrocinador" src="img/patrocinadores/Logo_SIC.png">
+        <img class="patrocinador" src="img/patrocinadores/logo-the-body-shop.png">
+        <img class="patrocinador" src="img/patrocinadores/men.png">
+        <img class="patrocinador" src="img/patrocinadores/logo-hotel-3k.png">
+        <img class="patrocinador" style="margin-right: 25%; width: 150px;"src="img/patrocinadores/logo-wock.png">
+    </div>
+
+    <!-- Razões para nos escolher -->
+    <div class="razões">
+        <h3 class="text-patrocinadores secondary-color">SOMOS DIFERENTES</h3>
+        <h3 class="sub-text-patrocinadores" >SOSAnimal é um hospital veterinário </br>onde a nossa prioridade são eles.</br>Acreditamos que é assim que eles </br> merecem ser cuidados.</br></h3>
+        <div class="container">
+            <div class="row quem-somos-icons">
+                <div class="col-sm">
+                    <img class="icons" src="img/icons/017-vet.png">
+                    <p class="icon-title"><b>Profissionais qualificados</b></p>
+                    <p class="icon-text">
+                        Os nossos médicos experientes estão preparados para diversas situações.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="icons" src="img/icons/029-dog.png">
+                    <p class="icon-title"><b>Pelos animais</b></p>
+                    <p class="icon-text">
+                        A nossa prioridade são sempre os nossos companheiros de estimação.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="icons" src="img/icons/034-chat.png">
+                    <p class="icon-title"><b>Facilidade</b></p>
+                    <p class="icon-text">
+                        Na marcação e horários que permitem a assistência médica conforme a sua disponibilidade.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="icons" src="img/icons/005-pills.png">
+                    <p class="icon-title"><b>Cuidados acessíveis</b></p>
+                    <p class="icon-text">
+                        Adaptados às suas circunstâncias e meios disponíveis para acesso aos serviços.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- O que acham de nós os clientes -->
+    <div class="client-opinion">
+            <h3 class="client-opinion-text">
+                This is a placeholder
+            </h3>
+        <svg width="100%" height="100%" viewBox="0 0 1440 555">
+            <path class="wave-css" d="M 0 350 C 100 -35, 600 350, 1000 400 S 1400 350, 1556 350 V 455 H 0 Z" stroke="transparent" fill="#ff6659"/>
+        </svg>
+    </div>
+    <!-- O que fazemos? -->
+    <!-- A nossa missão -->
+    <!-- Subscreva à nossa newsletter -->
+    <!-- Encontre-nos nas redes sociais! -->
+    <!-- Eles também fazem parte da família -->
+    <!-- Bottom menu -->
+    <div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+<!-- Javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- TODO: Put this into a file -->
+<script>
+    $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $(".top-bar").addClass("active");
+        }
+        else {
+            $(".top-bar").removeClass("active");
+        }
+    });
+</script>
+</body>
+</html>
